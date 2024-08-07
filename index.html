@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10</title>
+    <link rel="icon" href="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721520000&semt=ais_user">
+
+    <style>
+
+        body{
+            background-color: rgb(243, 243, 243);
+        }
+
+        .big-div{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            padding: 20px 0;
+        }
+        form{
+            width: 50%;
+            /* height: 400px; */
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* box-shadow: 2px 1px white; */
+            background-color: white;
+
+        }
+
+        .form-div{
+            width: 90%;
+            background-color: lightgray;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        input{
+            height: 50px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        select{
+            height: 50px;
+            font-size: 18px;
+            padding: 10px;
+            border: 2px solid;
+            border-radius: 4px;
+        }
+
+        ::placeholder{
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        label{
+            font-size: 18px;
+        }
+
+        button{
+            margin: 20px 0;
+            height: 60px;
+            background-color: rgb(38, 133, 38);
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: rgb(20, 100, 94);
+        }
+
+        .div{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+         
+        }
+
+        .div1{
+            position: relative;
+            padding: 10px;
+            width: 300px;
+            height: 300px;
+            color: white;
+            background-color: white;
+        }
+
+        .div2{
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            
+        }
+        .p{
+            width: 180px;
+            height: 30px;
+            border-radius: 4px;
+            padding: 20px 10px;
+            font-size: 30px;
+            background-color: rgb(38, 133, 38);
+            cursor:pointer
+        }
+
+        .p1{
+            color: white;
+            width: 180px;
+            height: 30px;
+            border-radius: 4px;
+            padding: 20px 10px;
+            font-size: 30px;
+            background-color: rgb(38, 133, 38);
+            cursor:pointer
+        }
+
+        .hidden-div{
+            position: absolute;
+            top: 10;
+            display: none;
+            background-color: lightgray;
+            width: 80%;
+            height: 180px;
+
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        ul li a{
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px;
+            color: black;
+
+        }
+        .p:hover + .hidden-div{
+            display: block;
+
+        }
+
+        .p2{
+            font-size: 24px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="big-div">
+        <form>
+            <div class="form-div">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="Your name..." required>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Your last name..." required>
+                <label for="country">Country</label>
+                <select name="country" id="country" required>
+                    <option value="Australia">Australia</option>
+                    <option value="Australia">United States</option>
+                    <option value="Australia">Great Britain</option>
+                    <option value="Australia">France</option>
+                </select>
+
+                <button type="submit">Submit</button>
+
+            </div>
+        </form>
+
+        <div class="div">
+
+            <div class="div2">
+                <div class="p1">Dropdown</div>
+                <p class="p2">this is a drop down menu</p>
+            </div>
+
+            <div class="div1">
+                <div class="p">Dropdown</div>
+                <div class="hidden-div">
+                    <ul>
+                        <li><a href="">Link 1</a></li>
+                        <li><a href="">Link 2</a></li>
+                        <li><a href="">Link 3</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
